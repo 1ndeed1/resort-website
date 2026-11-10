@@ -1,0 +1,21 @@
+/* Resort website - custom styles on top of Bootstrap */
+body { font-family: 'Segoe UI', Arial, sans-serif; }
+
+.hero, .page-banner {
+  background-size: cover;
+  background-position: center;
+}
+.hero { min-height: 90vh; }
+.page-banner { min-height: 280px; }
+
+.card-img-top { height: 220px; object-fit: cover; }
+.card { transition: transform .2s; }
+.card:hover { transform: translateY(-4px); }
+
+.footer-link { color: #ccc; text-decoration: none; }
+.footer-link:hover { color: #fff; text-decoration: underline; }
+
+@media (max-width: 576px) {
+  .hero { min-height: 70vh; }
+  .hero h1 { font-size: 2rem; }
+}
